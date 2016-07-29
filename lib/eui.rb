@@ -31,7 +31,7 @@ private_class_method :new
 # initialize()
 #==============================================================================#
 
-#===Synopsis
+
 # This method performs absolutely no error checking, and is meant to be used only by
 # other internal methods for the sake of the speedier creation of EUI objects.
 # Please consider using #create unless you know what you are doing with 100% certainty.
@@ -75,7 +75,7 @@ private_class_method :new
 # create()
 #==============================================================================#
 
-#===Synopsis
+
 #Create a new EUI48 or EUI64 object.
 #
 # Example:
@@ -114,7 +114,7 @@ private_class_method :new
 # address()
 #==============================================================================#
 
-#===Synopsis
+
 # Returns EUI address. The default address format is xxxx.xxxx.xxxx
 #
 # Example:
@@ -170,7 +170,7 @@ private_class_method :new
 # ei()
 #==============================================================================#
 
-#===Synopsis
+
 #Returns Extended Identifier portion of an EUI address (the vendor assigned ID).
 #The default address format is xx-xx-xx
 #
@@ -215,7 +215,7 @@ private_class_method :new
 # link_local()
 #==============================================================================#
 
-#===Synopsis
+
 # Provide an IPv6 Link Local address based on the current EUI address.
 #
 # Example:
@@ -238,7 +238,7 @@ private_class_method :new
 # oui()
 #==============================================================================#
 
-#===Synopsis
+
 #Returns Organizationally Unique Identifier portion of an EUI address (the vendor ID).
 #The default address format is xx-xx-xx.
 #
@@ -278,7 +278,7 @@ private_class_method :new
 # to_i()
 #==============================================================================#
 
-#===Synopsis
+
 #Returns the EUI as an Integer.
 #
 # Example:
@@ -299,7 +299,7 @@ private_class_method :new
 # to_ipv6
 #==============================================================================#
 
-#===Synopsis
+
 # Given a valid IPv6 subnet, return an IPv6 address based on the current EUI.
 #
 # Example:
@@ -375,7 +375,7 @@ private_class_method :new
 # to_s()
 #==============================================================================#
 
-#===Synopsis
+
 #Returns the EUI as an unformatted String.
 #
 # Example:
@@ -430,7 +430,7 @@ class EUI48 < EUI
 # to_eui64()
 #==============================================================================#
 
-#===Synopsis
+
 #Return an EUI64 address based on the current EUI48 address.
 #
 # Example:

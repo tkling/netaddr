@@ -33,7 +33,7 @@ class Tree
 # initialize()
 #==============================================================================#
 
-#===Synopsis
+
 #Create a new Tree object.
 #
 # Example:
@@ -52,7 +52,7 @@ class Tree
 # add!()
 #==============================================================================#
 
-#===Synopsis
+
 # Add a CIDR address or NetAddr::CIDR object to the tree.
 # Example:
 # tree.add!('192.168.1.0/24')
@@ -88,7 +88,7 @@ class Tree
 # ancestors()
 #==============================================================================#
 
-#===Synopsis
+
 # Returns all the ancestors of the provided CIDR addresses.
 #
 # Example:
@@ -125,7 +125,7 @@ class Tree
 # children()
 #==============================================================================#
 
-#===Synopsis
+
 # Returns all the immediate children of the provided CIDR addresses.
 #
 # Example:
@@ -163,7 +163,7 @@ class Tree
 # descendants
 #==============================================================================#
 
-#===Synopsis
+
 # Return all descendants of the provided CIDR address.
 #
 # Example:
@@ -203,7 +203,7 @@ class Tree
 # delete!()
 #==============================================================================#
 
-#===Synopsis
+
 # Remove the provided CIDR address from the tree.
 #
 # Example:
@@ -247,7 +247,7 @@ class Tree
 # dump
 #==============================================================================#
 
-#===Synopsis
+
 # Dump the contents of this tree.
 #
 # Example:
@@ -272,7 +272,7 @@ class Tree
 # exists?()
 #==============================================================================#
 
-#===Synopsis
+
 # Has a CIDR address already been added to the tree?
 #
 # Example:
@@ -305,7 +305,7 @@ class Tree
 # fill_in!()
 #==============================================================================#
 
-#===Synopsis
+
 # Fill in the missing subnets of a particular CIDR.
 #
 # Example:
@@ -345,7 +345,7 @@ class Tree
 # find()
 #==============================================================================#
 
-#===Synopsis
+
 # Find and return a CIDR from within the tree.
 #
 # Example:
@@ -379,7 +379,7 @@ class Tree
 # find_space()
 #==============================================================================#
 
-#===Synopsis
+
 # Find subnets that are of at least size X. Only subnets that are not themselves 
 # subnetted will be returned. :Subnet takes precedence over :IPCount
 #
@@ -450,7 +450,7 @@ class Tree
 # longest_match()
 #==============================================================================#
 
-#===Synopsis
+
 #Find the longest matching branch of our tree to which a 
 #CIDR address belongs. Useful for performing 'routing table' style lookups.
 #
@@ -483,7 +483,7 @@ class Tree
 # prune!()
 #==============================================================================#
 
-#===Synopsis
+
 # Remove all subnets of the provided CIDR address.
 #
 # Example:
@@ -522,7 +522,7 @@ class Tree
 # remove!()
 #==============================================================================#
 
-#===Synopsis
+
 # Remove the provided CIDR address, and all of its subnets from the tree.
 #
 # Example:
@@ -563,7 +563,7 @@ class Tree
 # resize!()
 #==============================================================================#
 
-#===Synopsis
+
 # Resize the provided CIDR address.
 #
 # Example:
@@ -605,7 +605,7 @@ class Tree
 # root()
 #==============================================================================#
 
-#===Synopsis
+
 # Returns the root of the provided CIDR address.
 #
 # Example:
@@ -644,7 +644,7 @@ class Tree
 # show()
 #==============================================================================#
 
-#===Synopsis
+
 # Print the tree as a formatted string.
 #
 # Example:
@@ -696,7 +696,7 @@ class Tree
 # siblings()
 #==============================================================================#
 
-#===Synopsis
+
 # Return list of the sibling CIDRs of the provided CIDR address.
 #
 # Example:
@@ -733,7 +733,7 @@ class Tree
 # summarize_subnets!()
 #==============================================================================#
 
-#===Synopsis
+
 # Summarize all subnets of the provided CIDR address. The subnets will be
 # placed under the new summary address within the tree.
 #
@@ -775,7 +775,7 @@ class Tree
 # supernets()
 #==============================================================================#
 
-#===Synopsis
+
 # Return list of the top-level supernets of this tree.
 #
 # Example:

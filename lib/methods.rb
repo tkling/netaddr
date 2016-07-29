@@ -10,7 +10,7 @@ module NetAddr
 # i_to_bits()
 #==============================================================================#
 
-#===Synopsis
+
 #Convert an Integer representing a binary netmask into an Integer representing
 #the number of bits in that netmask.
 #
@@ -39,7 +39,7 @@ module_function :i_to_bits
 # i_to_ip()
 #==============================================================================#
 
-#===Synopsis
+
 #Convert an Integer into an IP address. This method will attempt to auto-detect the IP version
 #if not provided, however, a slight speed increase is realized if version is provided.
 #
@@ -92,7 +92,7 @@ module_function :i_to_ip
 # ip_to_i()
 #==============================================================================#
 
-#===Synopsis
+
 #Convert IP addresses into an Integer. This method will attempt to auto-detect the IP version
 #if not provided, however a slight speed increase is realized if version is provided.
 #
@@ -145,7 +145,7 @@ module_function :ip_to_i
 # merge()
 #==============================================================================#
 
-#===Synopsis
+
 #Given a list of CIDR addresses or NetAddr::CIDR objects,
 #merge (summarize) them in the most efficient way possible. Summarization 
 #will only occur when the newly created supernets will not result in the 
@@ -257,7 +257,7 @@ module_function :merge
 # minimum_size()
 #==============================================================================#
 
-#===Synopsis
+
 #Given the number of IP addresses required in a subnet, return the minimum
 #netmask (bits by default) required for that subnet. IP version is assumed to be 4 unless specified otherwise.
 #
@@ -305,7 +305,7 @@ module_function :minimum_size
 # netmask_to_i()
 #==============================================================================#
 
-#===Synopsis
+
 #Convert IP netmask into an Integer. Netmask may be in either CIDR (/yy) or
 #extended (y.y.y.y) format. CIDR formatted netmasks may either
 #be a String or an Integer. IP version defaults to 4. It may be necessary
@@ -365,7 +365,7 @@ module_function :netmask_to_i
 # range()
 #==============================================================================#
 
-#===Synopsis
+
 #Given two CIDR addresses or NetAddr::CIDR objects of the same version,
 #return all IP addresses between them. NetAddr.range will use the original IP 
 #address passed during the initialization of the NetAddr::CIDR objects, or the 
@@ -508,7 +508,7 @@ module_function :range
 # shorten()
 #==============================================================================#
 
-#===Synopsis
+
 #Take a standard IPv6 address and format it in short-hand notation.
 #The address should not contain a netmask.
 #
@@ -600,7 +600,7 @@ module_function :shorten
 # sort()
 #==============================================================================#
 
-#===Synopsis
+
 #Sort a list of CIDR addresses or NetAddr::CIDR objects,
 #
 # Example:
@@ -684,7 +684,7 @@ module_function :sort
 # supernets()
 #==============================================================================#
 
-#===Synopsis
+
 #Given a list of CIDR addresses or NetAddr::CIDR objects,
 #return only the top-level supernet CIDR addresses.
 #
@@ -784,7 +784,7 @@ module_function :supernets
 # unshorten()
 #==============================================================================#
 
-#===Synopsis
+
 #Take an IPv6 address in short-hand format, and expand it into standard
 #notation. The address should not contain a netmask.
 #
@@ -822,7 +822,7 @@ module_function :unshorten
 # validate_eui()
 #==============================================================================#
 
-#===Synopsis
+
 #Validate an EUI-48 or EUI-64 address. Raises NetAddr::ValidationError on validation failure.
 #
 # Example:
@@ -875,7 +875,7 @@ module_function :validate_eui
 # validate_ip_addr()
 #==============================================================================#
 
-#===Synopsis
+
 #Validate an IP address. The address should not contain a netmask.
 #This method will attempt to auto-detect the IP version
 #if not provided, however a slight speed increase is realized if version is provided.
@@ -934,7 +934,7 @@ module_function :validate_ip_addr
 # validate_ip_netmask()
 #==============================================================================#
 
-#===Synopsis
+
 #Validate IP Netmask. Version defaults to 4 if not specified.
 #Raises NetAddr::ValidationError on validation failure.
 #
@@ -992,7 +992,7 @@ module_function :validate_ip_netmask
 # wildcard()
 #==============================================================================#
 
-#===Synopsis
+
 #Convert a wildcard IP into a valid CIDR address. Wildcards must always be at
 #the end of the address. Any data located after the first wildcard will be lost.
 #Shorthand notation is prohibited for IPv6 addresses. 
